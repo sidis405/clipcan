@@ -1,8 +1,6 @@
 <?php
+Route::get('/', 'HomeController@index')->name('home');
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
 // User - ACL - ROLES/PERMISSIONS
     // perid - univoco
@@ -21,3 +19,5 @@ Route::get('/', function () {
 // Tag
     // appanrtono a piu Image
     // appartengono a piu album
+
+Auth::routes();

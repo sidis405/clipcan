@@ -28,7 +28,7 @@ class DatabaseSeeder extends Seeder
 
         $tags = Tag::all();
 
-        foreach (range(1, 10) as $key) {
+        foreach (range(1, 2) as $key) {
             $album = factory(Album::class)->create([
                 'user_id' => $user_id = $user->random()->id
             ]);
@@ -42,7 +42,7 @@ class DatabaseSeeder extends Seeder
 
         foreach ($albums as $album) {
             // crea 10 immagini
-            foreach (range(1, 10) as $key) {
+            foreach (range(1, 5) as $key) {
                 $image = factory(Image::class)->create([
                     'user_id' => $user_id = $user->random()->id,
                 ]);
