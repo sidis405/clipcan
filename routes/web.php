@@ -12,12 +12,12 @@ Route::get('/', function () {
     // Ha tag
     // appartiente ad un utente
     // pu`o essere privato o meno
-// Media - photo / video
+// Image - photo
     // hanno tag
     // appartengno a piu album
     // hanno un autore
     // data di scattto
     // pu`o essere privato o meno
 // Tag
-    // appanrtono a piu media
+    // appanrtono a piu Image
     // appartengono a piu album
