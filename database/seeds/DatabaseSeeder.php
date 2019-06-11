@@ -53,7 +53,7 @@ class DatabaseSeeder extends Seeder
                     'user_id' => $user_id
                 ]);
 
-                $image->addMediaFromUrl($this->faker->imageUrl(400, 300, 'abstract', true, str_random(4)))
+                $image->addMediaFromUrl($this->faker->imageUrl(400, 300, 'abstract', true, str_random(24)))
                     ->toMediaCollection();
             }
 
